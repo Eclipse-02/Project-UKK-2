@@ -105,7 +105,7 @@
                 <!--begin::Card-->
                 <div class="card">
                     <!--begin::Card body-->
-                    <div class="card-body p-8">
+                    <div class="card-body p-8 w-300px">
                         <img src="{{ asset('storage/storage/covers/' . $data->cover) }}" class="card-img-top w-250px mb-3" alt="{{ $data->title }}">
                         @if (auth()->check())
                             @if ($is_reading)

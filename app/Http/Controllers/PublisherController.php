@@ -32,7 +32,7 @@ class PublisherController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'name' => 'required|unique:publishers,name'
+            'name' => 'required'
         ]);
 
         if ($validator->fails()) {
