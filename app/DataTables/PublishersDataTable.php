@@ -31,7 +31,7 @@ class PublishersDataTable extends DataTable
      */
     public function query(Publisher $model): QueryBuilder
     {
-        return $model->newQuery();
+        return $model->where('is_active', 1)->newQuery();
     }
 
     /**

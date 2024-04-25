@@ -37,7 +37,7 @@ class BooksDataTable extends DataTable
      */
     public function query(Book $model): QueryBuilder
     {
-        return $model->with(['publisher', 'category'])->newQuery();
+        return $model->where('is_active', 1)->with(['publisher', 'category'])->newQuery();
     }
 
     /**
